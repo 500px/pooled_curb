@@ -10,7 +10,7 @@ require 'curb'
 # Example:
 # --------
 #
-#     require 'api/pooled_curb'
+#     require 'pooled_curb'
 #
 
 class PooledCurb

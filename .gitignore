@@ -9,16 +9,6 @@
 /test/version_tmp/
 /tmp/
 
-## Specific to RubyMotion:
-.dat*
-.repl_history
-build/
-
-## Documentation cache and generated files:
-/.yardoc/
-/_yardoc/
-/doc/
-/rdoc/
 
 ## Environment normalisation:
 /.bundle/
@@ -26,7 +16,3 @@ build/
 
 # Ignore bundler config.
 /.bundle
-
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
