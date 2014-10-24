@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Service::PooledCurb do
-  subject { Service::PooledCurb }
+describe PooledCurb do
+  subject { PooledCurb }
   before(:each) { subject.reset! }
 
   describe '.configure' do
@@ -37,7 +37,7 @@ describe Service::PooledCurb do
     end
 
     it "configures default timeout on request" do
-      expect(curl).to receive("timeout=").with(Service::PooledCurb::READ_TIMEOUT)
+      expect(curl).to receive("timeout=").with(PooledCurb::READ_TIMEOUT)
       subject.get("stub")
     end
 
@@ -75,7 +75,7 @@ describe Service::PooledCurb do
       end
 
       it "returns a Response object" do
-        expect(subject.get("stub")).to be_a(Service::PooledCurb::Response)
+        expect(subject.get("stub")).to be_a(PooledCurb::Response)
       end
 
       it "sets body_str on Response object" do
@@ -136,7 +136,7 @@ describe Service::PooledCurb do
     end
 
     it "configures default timeout on request" do
-      expect(curl).to receive("timeout=").with(Service::PooledCurb::WRITE_TIMEOUT)
+      expect(curl).to receive("timeout=").with(PooledCurb::WRITE_TIMEOUT)
       subject.post("stub", {})
     end
 
@@ -182,7 +182,7 @@ describe Service::PooledCurb do
       end
 
       it "returns a Response object" do
-        expect(subject.post("stub", {})).to be_a(Service::PooledCurb::Response)
+        expect(subject.post("stub", {})).to be_a(PooledCurb::Response)
       end
 
       it "sets body_str on Response object" do
