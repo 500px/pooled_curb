@@ -17,12 +17,12 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/500px/pooled-curb"
   s.license = "MIT"
 
-  s.add_dependency "activesupport"
-  s.add_dependency "yajl-ruby"
-  s.add_dependency "curb"
-  s.add_dependency "connection_pool"
+  s.add_dependency "activesupport", "~> 4.1"
+  s.add_dependency "yajl-ruby", "~> 1.2"
+  s.add_dependency "curb", "~> 0.8"
+  s.add_dependency "connection_pool", "~> 2.0"
 
-  s.add_development_dependency "json"
-  s.add_development_dependency "rspec"
-  s.add_development_dependency 'rake'
+  s.add_development_dependency "json", "~> 1.8"
+  s.add_development_dependency "rspec", "~> 2.14"
+  s.add_development_dependency 'rake', "~> 10.1"
 end

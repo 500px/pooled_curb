@@ -2,10 +2,10 @@ PATH
   remote: .
   specs:
     pooled_curb (1.0.0)
-      activesupport
-      connection_pool
-      curb
-      yajl-ruby
+      activesupport (~> 4.1.6)
+      connection_pool (~> 2.0)
+      curb (~> 0.8)
+      yajl-ruby (~> 1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -40,7 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  json
+  json (~> 1.8)
   pooled_curb!
-  rake
-  rspec
+  rake (~> 10.1)
+  rspec (~> 2.14)
