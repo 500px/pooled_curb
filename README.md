@@ -1,6 +1,8 @@
 Pooled CuRb gem
 ===============
 
+[![Build Status](https://semaphoreapp.com/api/v1/projects/1ccb4290-c2ab-4124-a088-c30389f1cc33/277526/badge.png)](https://semaphoreapp.com/cdmicacc/pooled_curb)
+
 A simple wrapper around curb to provide a pool of reusable HTTP connections.
 
 Usage
